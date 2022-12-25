@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米官網</title>
+  <link rel="icon" href="./123.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link href="1.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="./test_data.js"></script>
+</head>
+
+<style>
+  .text_color {
+    background-color: #121e2e;
+  }
+
+  .end_bgc {
+    background-color: #f5f5f5;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  .icon_text_color {
+    color: #c7c7c7;
+  }
+
+  .cellphone_number {
+    font-weight: bolder;
+    color: white;
+    size: 72px;
+  }
+
+  #svg2 {
+    /* line-height: 100px;
+    height: 100px; */
+    width: 56px;
+    overflow: hidden;
+    background-size: 56px;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  #svg1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-right: 56px;
+    transition: all .2s;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+    z-index: 0;
+  }
+
+  #svg1:hover {
+    margin-left: 54px;
+    transition: all .2s;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+    /* cursor: pointer; */
+  }
+
+  .col.mx-2.bg-light:hover,
+  .row.col.flex-column>ul>img:hover {
+    transition: all 0.8s;
+    box-shadow: 1px 8px 10px rgb(219, 217, 217);
+    /* cursor: pointer; */
+    margin-top: -3px;
+  }
+
+  img {
+    cursor: pointer;
+  }
+</style>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">MIUI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">下載小米商城APP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">小米積分中心</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">登錄送活動</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">小米團購</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">登入</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">註冊</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fi fi-br-shopping-cart"></i>
+              購物車(0)
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li>購物車中還沒有商品，趕緊選購吧!</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light w-100" style="position: relative;">
+      <div class="container-fluid w-100">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 d-flex w-100">
+            <li>
+            <li id="svg2">
+              <img src="mi-logo-bg.svg" style="height: 50px; position:relative;left: 3px;top: 0px;">
+            <li id="svg1">
+              <img src="下載.svg" style="margin-left: -54px; margin-top: 5px;">
+            </li>
+            </li>
+            <li style="z-index: 1;">
+              <img src="./lingquan-pc.gif" alt="">
+            </li>
+            </li>
+            <li class="nav-item col d-flex align-items-center">
+              <!-- <a class="nav-link active" aria-current="page" href="#">Xiaomi手機</a> -->
+              <span data-i="1" class="test_span">Xiaomi手機</span>
+            </li>
+            <li class="nav-item col d-flex align-items-center">
+              <!-- <a class="nav-link" href="#">Redmi手機</a> -->
+              <span data-i="2" class="test_span">Redmi手機</span>
+            </li>
+            <li class="nav-item col d-flex align-items-center">
+              <!-- <a class="nav-link" href="#">POCO手機</a> -->
+              <span data-i="3" class="test_span">POCO手機</span>
+            </li>
+            <li class="nav-item col d-flex align-items-center">
+              <!-- <a class="nav-link" href="#">智慧家庭</a> -->
+              <span data-i="4" class="test_span">智慧家庭</span>
+            </li>
+            <li class="nav-item col d-flex align-items-center">
+              <!-- <a class="nav-link" href="#">智慧科技</a> -->
+              <span data-i="5" class="test_span">智慧科技</span>
+            </li>
+            <li class="nav-item col d-flex align-items-center">
+              <!-- <a class="nav-link" href="#">配件</a> -->
+              <span data-i="6" class="test_span">配件</span>
+            </li>
+            <li class="nav-item col d-flex align-items-center">
+              <a class="nav-link" href="#">服務</a>
+            </li>
+
+            <!-- <form class="d-flex" style="margin-right: 0px;"> -->
+            <li class="col d-flex align-items-center">
+              <input type="text" placeholder="收尋商品" style="margin-left: auto; height: 40px;">
+            </li>
+            <!-- <li class="col"> -->
+            <button class="btn btn-outline-dark" type="submit" style="height:40px;margin-top: 14px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+            <!-- </li> -->
+            <!-- </form> -->
+          </ul>
+
+        </div>
+      </div>
+      <div class="second_menu"></div>
+    </nav>
+    <!-- <ul> -->
+    <!-- <li>
+          <img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140"
+            alt="">
+          <span>Xiaomi 12T Pro</span>
+          <span>NT$19,999</span>
+        </li> -->
+    <!-- </ul> -->
+
+
+    <script>
+      $('.test_span').mousemove(function () {
+        $(".second_menu").empty('')
+        $('.second_menu').css("display", "flex")
+        $(this).css("cursor", "pointer")
+
+        Millet_data = Millet_datas.filter(menu => menu.menu_id == $(this)[0].dataset.i)
+
+        if ($('.second_menu').children('ul').length < Millet_data.length) {
+          console.log(Millet_data)
+          Millet_data.forEach(element => {
+            $('.second_menu').append(
+              `
+                      <ul data-id="${element.menu_id}" class="test_span">
+                          <li>
+                              <img src=${element.img} alt="">
+                              <span>${element.name}</span>
+                              <span>${element.price}</span>
+                          </li>
+                      </ul>
+                      `
+            )
+          });
+        }
+        Millet_data = []
+      })
+
+      $('.test_span').mouseout(function () {
+        // $(".second_menu").empty('')
+        $('.second_menu').css("display", "flex")
+      });
+
+      $('.second_menu').mousemove(function () {
+        $('.second_menu').css("display", "flex")
+      })
+      $('.second_menu').mouseout(function () {
+        $('.second_menu').css("display", "none")
+      })
+    </script>
+    <div class="row g-0">
+      <nav class="nav flex-column justify-content col text_color">
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            手機
+          </button>
+          <ul class="dropdown-menu flex-column" style="width: 780px;">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-3" style="height: 390px; width: 760px;">
+              <ul class="children-list children-list-col children-list-col-1">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/Xiaomi 12T system.png" width="40" height="40"
+                      alt="Xiaomi 12T 系列">
+                    <span class="text">Xiaomi 12T 系列</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/Xiaomi 12 system.png" width="40" height="40"
+                      alt="Xiaomi 12 系列">
+                    <span class="text">Xiaomi 12 系列</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/POCO M5 system.png" width="40" height="40"
+                      alt="POCO M5 系列">
+                    <span class="text">POCO M5 系列</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/POCO X4 Pro 5G.png" width="40" height="40"
+                      alt="POCO X4 Pro 5G">
+                    <span class="text">POCO X4 Pro 5G</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/POCO F4 GT.png" width="40" height="40"
+                      alt="POCO F4 GT">
+                    <span class="text">POCO F4 GT</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/POCO F4.png" width="40" height="40" alt="POCO F4">
+                    <span class="text">POCO F4</span></a>
+                </li>
+
+              </ul>
+              <ul class="children-list children-list-col children-list-col-2">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/POCO X4 GT.png" width="40" height="40"
+                      alt="POCO X4 GT">
+                    <span class="text">POCO X4 GT</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/POCO C40.png" width="40" height="40" alt="POCO C40">
+                    <span class="text">POCO C40</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/Redmi Note 11 Pro 5G.png" width="40" height="40"
+                      alt="Redmi Note 11 Pro 5G">
+                    <span class="text">Redmi Note 11 Pro 5G</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/Redmi Note 11S 5G.png" width="40" height="40"
+                      alt="Redmi Note 11S 5G">
+                    <span class="text">Redmi Note 11S 5G</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/Redmi Note 11S.png" width="40" height="40"
+                      alt="Redmi Note 11S">
+                    <span class="text">Redmi Note 11S</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/Redmi 10 2022.png" width="40" height="40"
+                      alt="Redmi 10 2022">
+                    <span class="text">Redmi 10 2022</span></a>
+                </li>
+              </ul>
+              <ul class="children-list children-list-col children-list-col-3">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/Redmi 10C.png" width="40" height="40" alt="Redmi 10C">
+                    <span class="text">Redmi 10C</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/Redmi 10A.png" width="40" height="40" alt="Redmi 10A">
+                    <span class="text">Redmi 10A</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="smartphone/POCO website.png" width="40" height="40"
+                      alt="POCO 官方網站">
+                    <span class="text">POCO 官方網站</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+
+
+        </div>
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            視聽娛樂
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-2">
+              <ul class="children-list children-list-col children-list-col-1">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/Q2 65.png" width="40" height="40"
+                      alt="智慧顯示器 Q2 65 型">
+                    <span class="text">智慧顯示器 Q2 65 型</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/Max 86.png" width="40" height="40"
+                      alt="智慧顯示器 Max 86 型">
+                    <span class="text">智慧顯示器 Max 86 型</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/mi 65.png" width="40" height="40"
+                      alt="小米智慧顯示器 65 型">
+                    <span class="text">小米智慧顯示器 65 型</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/A2 system.png" width="40" height="40"
+                      alt="智慧顯示器 A2 系列">
+                    <span class="text">智慧顯示器 A2 系列</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/P1 system.png" width="40" height="40"
+                      alt="智慧顯示器 P1 系列">
+                    <span class="text">智慧顯示器 P1 系列</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/Pad.png" width="40" height="40"
+                      alt="Pad">
+                    <span class="text">Pad</span></a>
+                </li>
+              </ul>
+              <ul class="children-list children-list-col children-list-col-2">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/Book.png" width="40" height="40"
+                      alt="Book">
+                    <span class="text">Book</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/computer screen.png" width="40"
+                      height="40" alt="電腦螢幕">
+                    <span class="text">電腦螢幕</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/Xiaomi K.png" width="40" height="40"
+                      alt="Xiaomi K 歌麥克風">
+                    <span class="text">Xiaomi K 歌麥克風</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/projector.png" width="40" height="40"
+                      alt="投影機">
+                    <span class="text">投影機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="audiovisual entertainment/bluetooth headset.jpg" width="40"
+                      height="40" alt="藍芽耳機">
+                    <span class="text">藍芽耳機</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            智慧家電
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-3">
+              <ul class="children-list children-list-col children-list-col-1">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/Sweeping robot.png" width="40" height="40"
+                      alt="掃拖機器人及配件">
+                    <span class="text">掃拖機器人及配件</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/wash floor machine.png" width="40"
+                      height="40" alt="洗地機">
+                    <span class="text">洗地機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/Vacuum cleaner.png" width="40" height="40"
+                      alt="吸塵器及配件">
+                    <span class="text">吸塵器及配件</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/Air cleaner.png" width="40" height="40"
+                      alt="空淨及配件">
+                    <span class="text">空淨及配件</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/camera.png" width="40" height="40"
+                      alt="攝影機">
+                    <span class="text">攝影機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/fan.png" width="40" height="40" alt="風扇">
+                    <span class="text">風扇</span></a>
+                </li>
+              </ul>
+              <ul class="children-list children-list-col children-list-col-2">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/lamp.png" width="40" height="40" alt="燈具">
+                    <span class="text">燈具</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/electronic cooker.jpg" width="40"
+                      height="40" alt="電子鍋">
+                    <span class="text">電子鍋</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/induction cooker.png" width="40"
+                      height="40" alt="電磁爐">
+                    <span class="text">電磁爐</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/soup pot.png" width="40" height="40"
+                      alt="煮湯鍋">
+                    <span class="text">煮湯鍋</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/Conditioner.png" width="40" height="40"
+                      alt="調理機">
+                    <span class="text">調理機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/kettle.png" width="40" height="40"
+                      alt="水壺及配件">
+                    <span class="text">水壺及配件</span></a>
+                </li>
+              </ul>
+              <ul class="children-list children-list-col children-list-col-3">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/hair dryer.png" width="40" height="40"
+                      alt="吹風機">
+                    <span class="text">吹風機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart Home Appliances/household.png" width="40" height="40"
+                      alt="智慧家居組合">
+                    <span class="text">智慧家居組合</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            旅行穿戴
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-2">
+              <ul class="children-list children-list-col children-list-col-1">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="travel wear/wristhand.png" width="40" height="40" alt="手環">
+                    <span class="text">手環</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="travel wear/watch.png" width="40" height="40" alt="手錶">
+                    <span class="text">手錶</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="travel wear/Wearing accessories.png" width="40" height="40"
+                      alt="穿戴配件">
+                    <span class="text">穿戴配件</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="travel wear/driving recorder.png" width="40" height="40"
+                      alt="行車紀錄器">
+                    <span class="text">行車紀錄器</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="travel wear/inflator.png" width="40" height="40" alt="打氣機">
+                    <span class="text">打氣機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="travel wear/travel box.png" width="40" height="40" alt="旅行箱">
+                    <span class="text">旅行箱</span></a>
+                </li>
+              </ul>
+              <ul class="children-list children-list-col children-list-col-2">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="travel wear/trumpet.png" width="40" height="40" alt="喇叭">
+                    <span class="text">喇叭</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="travel wear/selfie stick.png" width="40" height="40" alt="自拍桿">
+                    <span class="text">自拍桿</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            智慧科技
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-2">
+              <ul class="children-list children-list-col children-list-col-1">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/hygrometer.png" width="40" height="40"
+                      alt="溼度計">
+                    <span class="text">溼度計</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/camera.png" width="40" height="40" alt="攝影機">
+                    <span class="text">攝影機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/cordless vacuum cleaner.png" width="40"
+                      height="40" alt="無線吸塵器">
+                    <span class="text">無線吸塵器</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/doorbell.png" width="40" height="40" alt="智慧門鈴">
+                    <span class="text">智慧門鈴</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/switch.png" width="40" height="40" alt="智慧開關">
+                    <span class="text">智慧開關</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/photo printer.png" width="40" height="40"
+                      alt="相片印表機">
+                    <span class="text">相片印表機</span></a>
+                </li>
+              </ul>
+              <ul class="children-list children-list-col children-list-col-2">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/screwdriver.png" width="40" height="40"
+                      alt="起子機">
+                    <span class="text">起子機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/wifi extender.png" width="40" height="40"
+                      alt="wifi 延伸器">
+                    <span class="text">wifi 延伸器</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/router.png" width="40" height="40" alt="路由器">
+                    <span class="text">路由器</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="Smart technology/household.png" width="40" height="40"
+                      alt="智慧家居組合">
+                    <span class="text">智慧家居組合</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            店員3C配件
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-2">
+              <ul class="children-list children-list-col children-list-col-1">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="3C Accessories/power bank.png" width="40" height="40" alt="行動電源">
+                    <span class="text">行動電源</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="3C Accessories/charger.png" width="40" height="40" alt="充電器">
+                    <span class="text">充電器</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="3C Accessories/Extension cord.png" width="40" height="40"
+                      alt="延長線">
+                    <span class="text">延長線</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="3C Accessories/Transmission line.png" width="40" height="40"
+                      alt="傳輸線">
+                    <span class="text">傳輸線</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="3C Accessories/wireless car charger.png" width="40" height="40"
+                      alt="無線車充">
+                    <span class="text">無線車充</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="3C Accessories/mouse.png" width="40" height="40" alt="滑鼠">
+                    <span class="text">滑鼠</span></a>
+                </li>
+              </ul>
+              <ul class="children-list children-list-col children-list-col-2">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="3C Accessories/selfie stick.png" width="40" height="40"
+                      alt="自拍桿">
+                    <span class="text">自拍桿</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            耳機音箱
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-1">
+              <ul class="children-list children-list-col children-list-col-1" style="height: 280px;">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="headphone speaker/bluetooth headset.jpg" width="40" height="40"
+                      alt="藍芽耳機">
+                    <span class="text">藍芽耳機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="headphone speaker/trumpet.png" width="40" height="40" alt="喇叭">
+                    <span class="text">喇叭</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            健康護理
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-1" style="height: 360px;">
+              <ul class="children-list children-list-col children-list-col-1">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="health/hair dryer.png" width="40" height="40" alt="吹風機">
+                    <span class="text">吹風機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="health/scale.png" width="40" height="40" alt="體重計">
+                    <span class="text">體重計</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="health/wash hand machine.png" width="40" height="40"
+                      alt="洗手機（液）">
+                    <span class="text">洗手機（液）</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="health/razor.png" width="40" height="40" alt="刮鬍刀">
+                    <span class="text">刮鬍刀</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="health/toothbrush.png" width="40" height="40" alt="牙刷及刷頭">
+                    <span class="text">牙刷及刷頭</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle text_color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            生活周邊
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <div class="children children-col-2">
+              <ul class="children-list children-list-col children-list-col-1">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="life/massage gun.png" width="40" height="40" alt="按摩槍">
+                    <span class="text">按摩槍</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="life/pet.png" width="40" height="40" alt="寵物用品">
+                    <span class="text">寵物用品</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="life/travel box.png" width="40" height="40" alt="旅行箱">
+                    <span class="text">旅行箱</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="life/backpack.png" width="40" height="40" alt="後背包">
+                    <span class="text">後背包</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="life/inflator.png" width="40" height="40" alt="打氣機">
+                    <span class="text">打氣機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="life/electric drill.png" width="40" height="40" alt="電鑽">
+                    <span class="text">電鑽</span></a>
+                </li>
+              </ul>
+              <ul class="children-list children-list-col children-list-col-2">
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="life/Conditioner.png" width="40" height="40" alt="調理機">
+                    <span class="text">調理機</span></a>
+                </li>
+                <li>
+                  <a class="link" href="#" style="text-decoration:none">
+                    <img class="thumb img-loaded" src="life/liquid crystal.png" width="40" height="40" alt="液晶手寫板">
+                    <span class="text">液晶手寫板</span></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary  text_color" data-bs-toggle="dropdown" aria-expanded="false">
+            全部配件分類
+          </button>
+        </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide col-10" data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active"
+            aria-current="true" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="active"
+            aria-current="true" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+            aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+            aria-label="Slide 9"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./shoujiaofanchang-pc.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./poco40-pc.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./12t-pc-1111.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./pc-bannerluyouqi.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./poco-m5s-pc.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./11-proplus-pc.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./band-7pro-pc.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./w10-ultra-pc.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./KKBOX-PC.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="row my-3 d-flex justify-content-between">
+      <img class="col" src="https://i01.appmifile.com/webfile/globalimg/summer/20220811-170355.png?width=296&height=170"
+        alt="">
+      <img class="col"
+        src="https://i01.appmifile.com/webfile/globalweb/picture/20221009-175620.jpg?width=296&height=170" alt="">
+      <img class="col" src="https://i01.appmifile.com/webfile/globalimg/summer/20220811-170352.png?width=296&height=170"
+        alt="">
+      <img class="col" src="https://i01.appmifile.com/webfile/globalimg/summer/20220811-173533.png?width=296&height=170"
+        alt="">
+    </div>
+
+    <div class="row my-3">
+      <img src="https://i01.appmifile.com/webfile/globalimg/yanganna/member-s-p.png" alt="">
+    </div>
+
+    <div class="row my-5">
+      <h3 class="col-11">明星單品</h3>
+      <button id="lt">＜</button>
+      <button id="rt">＞</button>
+    </div>
+
+    <div class="" id="star_item">
+      <ul>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656064284.60812631.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">Xiaomi Book S 12.4</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 20995</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1628492500.50683306.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">小米智慧顯示器 P1 55型</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 17999</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1630296437.53798138.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">小米智慧投影機 2</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 14995</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636539002.71722742.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">Xiaomi 空氣循環淨化器</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 11995</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1603191768.40914418.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">米家無線吸塵器 mini</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 1095</span>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1633675764.75855247.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">小米電動打氣機 1S</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 1095</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1647600303.72028110.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">Xiaomi 水離子吹風機 H500</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 1395</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1595478494.32749153.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">米家恆溫電水壺 1S</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 895</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636538731.15176153.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">Xiaomi 智慧攝影機 標準版 2K</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 695</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1593327726.88331847.png?width=160&height=160"
+            alt="">
+          <div style="text-align: center;">
+            <span class="text-center">小米便攜相片印表機</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="text-center" style="color:rgb(244,150,89);">NT$ 1665</span>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+    <script>
+      $('#lt').click(function () {
+        $('#star_item>ul>li').toggleClass('li_rt')
+      })
+      $('#rt').click(function () {
+        $('#star_item>ul>li').toggleClass('li_rt')
+      })
+
+      setInterval(() => {
+        $('#star_item>ul>li').toggleClass('li_rt')
+      }, 8000);
+    </script>
+
+
+  </div>
+  <div class=" end_bgc">
+    <div class="container">
+      <div class="row my-5">
+        <h3 class="col-11 mt-5">熱賣產品排行</h3>
+      </div>
+      <div class="row">
+        <ul class="col mx-2 bg-light">
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1613445002.13879491.png?width=160&height=160"
+            class="d-block w-100" alt="...">
+
+          <li class="text-center">小米智慧顯示器 65型</li>
+          <li class="text-center">NT$ 20999</li>
+        </ul>
+        <ul class="col mx-2 bg-light">
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1602579665.57575242.png?width=160&height=160"
+            class="d-block w-100" alt="...">
+
+          <li class="text-center">小米智慧攝影機 雲台版 2K Pro</li>
+          <li class="text-center">NT$ 1345</li>
+        </ul>
+        <ul class="col mx-2 bg-light">
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1633751777.51673296.png?width=160&height=160"
+            class="d-block w-100" alt="...">
+          <li class="text-center">小米智慧氣炸鍋 3.5L</li>
+          <li class="text-center">NT$ 1995</li>
+        </ul>
+        <ul class="col mx-2 bg-light">
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1654848497.27055227.png?width=160&height=160"
+            class="d-block w-100" alt="...">
+          <li class="text-center">Xiaomi 空氣淨化器 4</li>
+          <li class="text-center">NT$ 4995</li>
+        </ul>
+        <ul class="col mx-2 bg-light">
+          <img
+            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1645529333.04166200.png?width=160&height=160"
+            class="d-block w-100" alt="...">
+          <li class="text-center">Xiaomi 掃拖機器人 2 Ultra 集塵版</li>
+          <li class="text-center">NT$ 14995</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <h3 class="col-12 ">智慧科技與家庭</h3>
+      </div>
+
+      <div class="d-flex">
+        <div class="row col flex-column">
+          <ul class="w-100">
+            <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-65monitor-04.jpg?width=234&height=380"
+              class="d-block w-100" alt="...">
+          </ul>
+          <ul class="w-100 mt-1">
+            <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-12-books.jpg?width=234&height=380"
+              class="d-block w-100" alt="...">
+          </ul>
+          <ul class="w-100 mt-1">
+            <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-w10-ultra.jpg?width=234&height=380"
+              class="d-block w-100" alt="...">
+          </ul>
+          <ul class="w-100 mt-1">
+            <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-kongjing-4po.jpg?width=234&height=380"
+              class="d-block w-100" alt="...">
+          </ul>
+          <ul class="w-100 mt-1">
+            <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-band-7pro.jpg?width=234&height=380"
+              class="d-block w-100" alt="...">
+          </ul>
+        </div>
+
+
+        <div class="col-10">
+          <div class="row ms-1">
+
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1665460092.32378525.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">Xiaomi 智慧顯示器 Q2 65 型</li>
+              <li class="text-center">NT$ 35999</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656059374.69853800.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">
+                Xiaomi 智慧顯示器 A2 55型
+              </li>
+              <li class="text-center">NT$ 19999</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656061012.71284064.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">Xiaomi 智慧顯示器 A2 43型</li>
+              <li class="text-center">NT$ 15999</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1621479160.6511830.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">
+                小米 27 型電腦螢幕
+              </li>
+              <li class="text-center">NT$ 5295</li>
+            </ul>
+
+          </div>
+          <div class="row ms-1">
+
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1626346503.08587000.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">
+                小米34型曲面螢幕
+              </li>
+              <li class="text-center">NT$ 12995</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1626346767.79016104.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">小米23.8型電腦螢幕1C</li>
+              <li class="text-center">NT$ 4295</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1642059129.29245338.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">Xiaomi 27型 2K 電競螢幕</li>
+              <li class="text-center">NT$ 11995</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/webfile/globalimg/summer/pms_1657708914.39357176.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">XiaomiBook S 12.4</li>
+              <li class="text-center">NT$ 24755</li>
+            </ul>
+
+          </div>
+          <div class="row ms-1">
+
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1661156019.98216795.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">Xiaomi 無線洗地機 W10 Pro</li>
+              <li class="text-center">NT$ 15995</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1664274071.83322732.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">Xiaomi 掃拖機器人 S10</li>
+              <li class="text-center">NT$ 7995</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656657594.61783139.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">Xiaomi 超輕量無線吸塵器</li>
+              <li class="text-center">NT$ 8995</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1639474430.97678877.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">Xiaomi 無線吸塵器 G11</li>
+              <li class="text-center">NT$ 8995</li>
+            </ul>
+
+          </div>
+          <div class="row ms-1">
+
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1654848468.39241656.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">Xiaomi 空氣淨化器 4 Lite</li>
+              <li class="text-center">NT$ 3495</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1577167989.67723522.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">米家空氣淨化器濾芯</li>
+              <li class="text-center">NT$ 795</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1651198060.64381173.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">Xiaomi 智慧無扇葉淨化風扇</li>
+              <li class="text-center">NT$ 7995</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636539002.71722742.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">Xiaomi 空氣循環淨化器</li>
+              <li class="text-center">NT$ 11995</li>
+            </ul>
+
+          </div>
+          <div class="row ms-1 mb-5">
+
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1621480005.41554496.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">小米手環6</li>
+              <li class="text-center">NT$ 895</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1653461542.8592748.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">Xiaomi 手環7</li>
+              <li class="text-center">NT$ 1195</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1638442508.23396290.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+              <li class="text-center">Redmi 手環 Pro</li>
+              <li class="text-center">NT$ 995</li>
+            </ul>
+            <ul class="col mx-2 w-100 h-100 bg-light">
+              <img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646290380.15354139.png?width=150&height=150"
+                class="d-block w-100" alt="...">
+
+              <li class="text-center">Xiaomi Watch S1 Active</li>
+              <li class="text-center">NT$ 4495</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="container mt-3 d-flex">
+    <ul class="col p-2 h-100 d-flex">
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor"
+          class="bi bi-coin mt-1 mx-2 icon_text_color" viewBox="0 0 16 16">
+          <path
+            d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+        </svg>
+      </li>
+
+      <li>
+        <strong>免運費</strong><br>
+        <span class="icon_text_color">全場滿 NT$800</span>
+      </li>
+    </ul>
+    <ul class="col p-2 h-100 d-flex">
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor"
+          class="bi bi-truck mt-1 mx-2 icon_text_color" viewBox="0 0 16 16">
+          <path
+            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+        </svg>
+      </li>
+
+      <li>
+        <strong>黑貓宅急便 x GOGOX</strong><br>
+        <span class="icon_text_color">服務升級，限時送達</span>
+      </li>
+    </ul>
+    <ul class="col p-2 h-100 d-flex">
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor"
+          class="bi bi-building mt-1 mx-2 icon_text_color" viewBox="0 0 16 16">
+          <path
+            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+          <path
+            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
+        </svg>
+      </li>
+
+      <li>
+        <strong>團購採購通道</strong><br>
+        <span class="icon_text_color">採購小米好禮專屬通道</span>
+      </li>
+    </ul>
+    <ul class="col p-2 h-100 d-flex border-start">
+
+
+      <li class="mx-3">
+        <strong>關注我們</strong><br>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-facebook mx-2 icon_text_color" viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-instagram mx-2 icon_text_color" viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-youtube mx-2 icon_text_color" viewBox="0 0 16 16">
+          <path
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-line mx-2 icon_text_color" viewBox="0 0 16 16">
+          <path
+            d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z" />
+        </svg>
+      </li>
+      </li>
+    </ul>
+
+  </div>
+
+  <footer class="pt-4  pt-md-5 border-top bg-dark">
+    <div class="container border-light border-bottom">
+      <div class="row">
+        <div class="col-2 col-md">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                產品與配件
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                熱門商品分類
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                全部商品分類
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                官方翻新機
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                F 碼通道
+              </a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-md">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                幫助中心
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                購物指南</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                付款幫助</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                PayPal 使用幫助 </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                分期付款
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                常見 Q&A
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                線上填寫折讓單入口
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                退款資料補充
+              </a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-md">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                客戶支援</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                服務條款及細則</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                維修站地點
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                售後服務政策</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                退貨須知
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                配送規範
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                使用者指南</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                尊享服務 </a></li>
+
+          </ul>
+        </div>
+        <div class="col-2 col-md">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                關於小米
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                瞭解小米
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                管理團隊</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                隱私條款
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                誠信規範​
+              </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                投資者關係</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                信任中心 </a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-md">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                小米哪裡買</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                小米之家/小米專賣店</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                官方授權通路</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                聯絡我們 </a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-md">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none cellphone_number" href="#">
+                <h3>02-77255376</h3>
+              </a></li>
+
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">
+                服務時間 09:00-18:00 含節假日</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row my-5 border-top">
+        <span class="icon_text_color mt-5">
+          © 2010 - 2022 Xiaomi 版權所有 旗下網站： 小米商城 MIUI
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

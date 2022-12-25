@@ -1,0 +1,136 @@
+[class |="children children-col-1"] {
+    display: flex;
+    height: 300px;
+    padding: 15px;
+    background-color: white;
+}
+
+[class |="children-list children-list-col children-list-col-1"] {
+    /* display: flex; */
+    height: 300px;
+    padding: 15px 10px;
+    background-color: white;
+}
+
+[class |="children-list children-list-col children-list-col-1"]>li {
+    padding-bottom: 20px;
+}
+
+[class |="children children-col-2"] {
+    display: flex;
+    width: 580px;
+    height: 380px;
+    padding: 15px;
+    background-color: white;
+}
+
+[class |="children-list children-list-col children-list-col-2"] {
+    /* display: flex; */
+    height: 300px;
+    padding: 15px 0px 0px 100px;
+    background-color: white;
+}
+
+[class |="children-list children-list-col children-list-col-2"]>li {
+    padding-bottom: 20px;
+}
+
+[class |="children children-col-3"] {
+    display: flex;
+    width: 700px;
+    height: 385px;
+    /* padding: 15px; */
+    background-color: white;
+}
+
+[class |="children-list children-list-col children-list-col-3"] {
+    /* display: flex; */
+    height: 300px;
+    padding: 15px 0px 0px 100px;
+    background-color: white;
+}
+
+[class |="children-list children-list-col children-list-col-3"]>li {
+    padding-bottom: 20px;
+}
+
+/* [class |= "nav-category-item"]{
+    width: auto;
+    height: auto;
+    background-color: aqua;
+    padding: 15px 20px;
+} */
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #555; */
+}
+
+
+#star_item,
+#star_item>ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#star_item {
+    /* border: 1px solid #999; */
+    width: 1300px;
+
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+#star_item>ul>li {
+    position: relative;
+    /* left: 0px; */
+    /* border: 1px solid #333; */
+    border-radius: 5px;
+    margin: 0px 10px;
+    transition: all 1s;
+    background-color: rgb(241, 241, 241);
+}
+
+#star_item>ul>li>img {
+    width: 240px;
+}
+
+.li_rt {
+    left: -790px;
+}
+
+#lt,
+#rt {
+    border: 1px solid rgb(198, 195, 195);
+    width: 47px;
+    height: 38px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.second_menu {
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 85px;
+    z-index: 1;
+}
+
+.second_menu>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_menu>ul>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
